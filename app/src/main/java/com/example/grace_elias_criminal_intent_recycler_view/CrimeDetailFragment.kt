@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.grace_elias_criminal_intent_recycler_view.databinding.FragmentCrimeDetailBinding
 import java.util.Date
 import java.util.UUID
+import kotlin.random.Random
 
 class CrimeDetailFragment : Fragment() {
 
@@ -27,7 +28,8 @@ class CrimeDetailFragment : Fragment() {
             id = UUID.randomUUID(),
             title = "",
             date = Date(),
-            isSolved = false
+            isSolved = false,
+            requiresPolice = Random.nextBoolean()
         )
     }
 
